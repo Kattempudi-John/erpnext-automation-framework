@@ -1,0 +1,42 @@
+2026-07-17 17:22:25 INFO  BaseTest - Test setup started.
+2026-07-17 17:22:25 INFO  DriverFactory - Initializing WebDriver...
+2026-07-17 17:22:25 INFO  ConfigReader - Loading configuration file...
+2026-07-17 17:22:25 INFO  ConfigReader - Configuration loaded successfully.
+2026-07-17 17:22:25 INFO  DriverFactory - Selected broswer: chrome
+2026-07-17 17:22:29 INFO  DriverFactory - chrome browser launched successfully.
+2026-07-17 17:22:29 INFO  DriverManager - Driver instance stored successfully.
+2026-07-17 17:22:29 INFO  BaseTest - Browser initialized successfully.
+2026-07-17 17:22:29 INFO  LoginTest - Login test execution started.
+2026-07-17 17:22:30 INFO  LoginTest - ERPNext application launched successfully.
+2026-07-17 17:22:30 INFO  LoginTest - Login test execution completed.
+2026-07-17 17:22:30 INFO  BaseTest - Closing browser.
+2026-07-17 17:22:31 INFO  DriverManager - Driver instance removed successfully.
+2026-07-17 17:22:31 INFO  BaseTest - Test teardown completed.
+2026-07-18 17:28:12 INFO  BaseTest - Test setup started.
+2026-07-18 17:28:12 INFO  DriverFactory - Initializing WebDriver...
+2026-07-18 17:28:12 INFO  ConfigReader - Loading configuration file...
+2026-07-18 17:28:12 INFO  ConfigReader - Configuration loaded successfully.
+2026-07-18 17:28:12 INFO  DriverFactory - Selected broswer: chrome
+2026-07-18 17:28:17 INFO  DriverFactory - chrome browser launched successfully.
+2026-07-18 17:28:17 INFO  DriverManager - Driver instance stored successfully.
+2026-07-18 17:28:17 INFO  BaseTest - Browser initialized successfully.
+2026-07-18 17:28:17 INFO  LoginTest - Login test execution started.
+2026-07-18 17:28:18 INFO  LoginTest - ERPNext application launched successfully.
+2026-07-18 17:28:18 INFO  LoginTest - Login test execution completed.
+2026-07-18 17:28:18 INFO  BaseTest - Closing browser.
+2026-07-18 17:28:18 INFO  DriverManager - Driver instance removed successfully.
+2026-07-18 17:28:18 INFO  BaseTest - Test teardown completed.
+2026-07-20 14:39:51 INFO  BaseTest - Test setup started.
+2026-07-20 14:39:51 INFO  DriverFactory - Initializing WebDriver...
+2026-07-20 14:39:51 INFO  ConfigReader - Loading configuration file...
+2026-07-20 14:39:51 INFO  ConfigReader - Configuration loaded successfully.
+2026-07-20 14:39:51 INFO  DriverFactory - Selected broswer: chrome
+2026-07-20 14:39:56 INFO  DriverFactory - chrome browser launched successfully.
+2026-07-20 14:39:56 INFO  DriverManager - Driver instance stored successfully.
+2026-07-20 14:39:56 INFO  BaseTest - Browser initialized successfully.
+2026-07-20 14:39:56 INFO  LoginTest - Login test execution started.
+2026-07-20 14:39:57 INFO  LoginTest - ERPNext application launched successfully.
+2026-07-20 14:39:57 INFO  LoginTest - Login test execution completed.
+2026-07-20 14:39:57 INFO  BaseTest - Closing browser.
+2026-07-20 14:39:58 INFO  DriverManager - Driver instance removed successfully.
+2026-07-20 14:39:58 INFO  BaseTest - Test teardown completed.
