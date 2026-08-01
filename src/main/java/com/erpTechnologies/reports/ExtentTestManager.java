@@ -22,7 +22,7 @@ public class ExtentTestManager {
         return test.get();
     }
 
-    public static void unloadTest(){
+    public static void removeTest(){
         test.remove();
         logger.info("ExtentTest instance removed successfully.");
     }

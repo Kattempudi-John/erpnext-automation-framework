@@ -1,11 +1,15 @@
 package com.erpTechnologies.tests;
 
 import com.erpTechnologies.drivers.DriverManager;
+import com.erpTechnologies.listeners.TestListener;
 import com.erpTechnologies.utilities.ConfigReader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(TestListener.class)
 public class LoginTest extends BaseTest {
 
     private static final Logger logger =
@@ -20,5 +24,8 @@ public class LoginTest extends BaseTest {
         logger.info("ERPNext application launched successfully.");
 
         logger.info("Login test execution completed.");
+
+        Assert.assertTrue(false, "Intentional Failure");
+
     }
 }
