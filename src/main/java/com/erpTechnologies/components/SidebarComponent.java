@@ -1,7 +1,7 @@
 package com.erpTechnologies.components;
 
 import com.erpTechnologies.pages.BasePage;
-import com.erpTechnologies.pages.EmployeePage;
+import com.erpTechnologies.pages.CustomerPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -14,9 +14,9 @@ public class SidebarComponent extends BasePage {
         super(driver);
     }
 
-    public EmployeePage clickEmployee(){
+    public CustomerPage clickEmployee(){
         click(employeeMenu, "Employee Menu");
-        return new EmployeePage(getDriver());
+        return new CustomerPage(getDriver());
     }
 
 

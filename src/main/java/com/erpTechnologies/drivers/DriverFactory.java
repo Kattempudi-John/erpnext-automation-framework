@@ -48,6 +48,17 @@ public class DriverFactory {
                 throw new RuntimeException("Invalid browser name: " + browser);
         }
 
+        driver.manage().window().maximize();
+        logger.info("Browser window maximized.");
+
+        driver.manage().deleteAllCookies();
+        logger.info("Browser cookies deleted.");
+
+        // Navigate to Application
+        String url = ConfigReader.getProperty("base.url");
+        driver.get(url);
+        logger.info("Navigated to application URL: {}", url);
+
         return driver;
     }
 }

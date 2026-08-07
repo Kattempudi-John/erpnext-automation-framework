@@ -9,7 +9,8 @@ public class LoginPage extends BasePage{
 
     private final By passwordInput = By.id("login_password");
 
-    private final By loginButton = By.xpath("//button[text()='Login']");
+    private final By loginButton = By.xpath("//button[text()='\n" +
+            "\t\tContinue']");
 
     private final By loginErrorMessage = By.cssSelector(".alert");
 
@@ -35,7 +36,7 @@ public class LoginPage extends BasePage{
                 "Login Error Message");
     }
 
-    public DashboardPage login(String username, String password){
+    public HomePage login(String username, String password){
 
         enterUsername(username);
 
@@ -43,7 +44,7 @@ public class LoginPage extends BasePage{
 
         clickLogin();
 
-        return new DashboardPage(getDriver());
+        return new HomePage(getDriver());
     }
 
 
