@@ -1,0 +1,41 @@
+[33mcommit 5c6ff8bac28f95d955a57c3bed6926aea75cfaad[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Kattempudi-John <john.kattempudi1204@gmail.com>
+Date:   Sat Aug 8 01:21:22 2026 +0530
+
+    feat(customer): add end-to-end customer creation automation
+
+[33mcommit 10966197e8374edc785ed8199308ea80786b40ab[m
+Author: Kattempudi-John <john.kattempudi1204@gmail.com>
+Date:   Mon Aug 3 12:37:20 2026 +0530
+
+    Remove IntelliJ project files from repository
+
+[33mcommit 7017765ba77b05be4aaa074dd70c9bc0361ca766[m
+Author: Kattempudi-John <john.kattempudi1204@gmail.com>
+Date:   Sun Aug 2 00:15:19 2026 +0530
+
+    implement enterprise page object components
+
+[33mcommit 3d16117b821ccfd853d7dc406d22c2043b4ac8b0[m
+Author: Kattempudi-John <john.kattempudi1204@gmail.com>
+Date:   Mon Jul 20 14:58:13 2026 +0530
+
+    Add Extent Reports integration
+
+[33mcommit f7a061e8e1ba949b039ad2631755f8b161d55c9f[m
+Author: Kattempudi-John <john.kattempudi1204@gmail.com>
+Date:   Fri Jul 17 17:09:23 2026 +0530
+
+    Ignore IntelliJ workspace configuration
+
+[33mcommit a3946f335fe39bf04205cb34789fe8083b3f5c64[m
+Author: Kattempudi-John <john.kattempudi1204@gmail.com>
+Date:   Fri Jul 17 17:05:33 2026 +0530
+
+    Updated with logs
+
+[33mcommit def6288fa6376102f31fe304a17767a77b5ccf3d[m
+Author: Kattempudi-John <john.kattempudi1204@gmail.com>
+Date:   Wed Jul 15 21:22:37 2026 +0530
+
+    Initial commit: Setup ERPNext automation framework foundation

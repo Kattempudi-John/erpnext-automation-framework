@@ -14,13 +14,17 @@ public class CustomerPage extends BasePage {
             By.cssSelector("button.primary-action[data-label='Add Customer']");
 
     private final By customerPageHeader =
-            By.cssSelector("a.title-text[href='/desk/customer']");
+            By.xpath("//div[@data-id='Customer']//div[contains(@class,'active-sidebar')]//a[@href='/desk/customer']");
 
     private final By customerNameInput =
-            By.cssSelector(ACTIVE_MODAL + " input[data-fieldname='customer_name'][data-doctype='Customer']");
+            By.cssSelector(ACTIVE_MODAL + " input[data-fieldname='customer_name'][data-doctype= 'Customer']");
 
-    private final By customerTypeSelect =
-            By.cssSelector(ACTIVE_MODAL + " select[data-fieldname='customer_type'][data-doctype='Customer']");
+    private By customerTypeSelect(String customerType) {
+        return By.xpath(
+                ACTIVE_MODAL +
+                        " select[data-fieldname='customer_type'][data-doctype='" + customerType + "']"
+        );
+    }
 
     private final By firstNameInput =
             By.cssSelector(ACTIVE_MODAL + " input[data-fieldname='map_to_first_name'][data-doctype='Customer']");
@@ -42,6 +46,7 @@ public class CustomerPage extends BasePage {
 
     private final By zipCodeInput =
             By.cssSelector(ACTIVE_MODAL + " input[data-fieldname='pincode'][data-doctype='Customer']");
+
 
     private final By cityInput =
             By.cssSelector(ACTIVE_MODAL + " input[data-fieldname='city'][data-doctype='Customer']");
@@ -65,6 +70,9 @@ public class CustomerPage extends BasePage {
     private final By saveButton =
             By.cssSelector(ACTIVE_MODAL + " .modal-footer button.btn-modal-primary");
 
+    private final By customerSaveMessage =
+            By.cssSelector("#alert-container .alert-message");
+
     private final By editFullFormButton =
             By.cssSelector(ACTIVE_MODAL + " .modal-footer button.btn-secondary");
 
@@ -74,6 +82,19 @@ public class CustomerPage extends BasePage {
 
     public boolean isCustomerPageLoaded() {
         return isDisplayed(customerPageHeader, "Customer");
+    }
+
+    public boolean isCustomerSaved(String customerName) {
+
+        String actualMessage = getText(
+                customerSaveMessage,
+                "Customer Saved Successfully"
+        );
+
+        String expectedMessage = customerName + " saved";
+
+        return actualMessage.trim()
+                .equalsIgnoreCase(expectedMessage);
     }
 
     public void clickAddCustomer(){
@@ -88,9 +109,11 @@ public class CustomerPage extends BasePage {
     }
 
     public CustomerPage selectCustomerType(String customerType) {
-
-        selectByVisibleText(customerTypeSelect, customerType, "Customer Type");
-
+        selectByVisibleText(
+                customerTypeSelect(customerType),
+                customerType,
+                "Customer Type"
+        );
         return this;
     }
 

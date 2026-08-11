@@ -1,7 +1,6 @@
 package com.erpTechnologies.reports;
 
 import com.aventstack.extentreports.ExtentTest;
-import com.erpTechnologies.drivers.DriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
