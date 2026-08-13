@@ -9,46 +9,11 @@
       <change beforePath="$PROJECT_DIR$/logs/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/automation.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/AutomationReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/AutomationReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Click_Save Button_20260807_182629.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Click_Save Button_20260807_220450.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Click_Save Button_20260807_221225.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/IsDisplayed_Dashboard Header_20260803_165124.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/IsDisplayed_Dashboard Header_20260806_160445.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/SelectByVisibleText_Customer Type_20260807_153328.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/SelectByVisibleText_Customer Type_20260807_155413.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/SelectByVisibleText_Customer Type_20260807_160544.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/SelectByVisibleText_Customer Type_20260807_185247.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_Customer Name_20260807_165044.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_Customer Name_20260807_170834.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_First Name_20260807_185517.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_First Name_20260807_190157.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_First Name_20260807_191228.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_First Name_20260807_191603.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_First Name_20260807_193400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_Last Name_20260807_215601.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_Last Name_20260807_220358.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_Username Input_20260803_161318.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_Username Input_20260803_161438.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_Username Input_20260803_161906.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_Username Input_20260803_162133.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/Type_Username Input_20260803_162245.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/shouldCreateValidCustomer_20260807_215601.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/shouldCreateValidCustomer_20260807_220358.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/shouldCreateValidCustomer_20260807_220450.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/shouldCreateValidCustomer_20260807_221225.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/verifyApplicationLaunch_20260722_151809.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/verifyApplicationLaunch_20260722_152934.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/verifyApplicationLaunch_20260803_161322.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/verifyApplicationLaunch_20260806_160450.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/verifyApplicationLaunch_20260807_215605.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/verifyApplicationLaunch_20260807_220402.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/verifyApplicationLaunch_20260807_220453.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/verifyApplicationLaunch_20260807_221228.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/verifyEmployeeNavigation_20260803_161318.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/verifyEmployeeNavigation_20260806_160445.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/pages/CustomerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/pages/CustomerPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/reports/ExtentTestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/reports/ExtentTestManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/testdata/CustomerTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/testdata/CustomerTestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/tests/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/tests/customer/CustomerCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/tests/customer/CustomerCreationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +48,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.CustomerCreatingNegativeTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.CustomerCreationTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.EmployeeNavigationTest.verifyEmployeeNavigation.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
@@ -94,7 +60,24 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.CustomerCreationTest">
+  <component name="RunManager" selected="TestNG.CustomerCreatingNegativeTest">
+    <configuration name="CustomerCreatingNegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="erpnext-automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.erpTechnologies.tests.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.erpTechnologies.tests.customer" />
+      <option name="MAIN_CLASS_NAME" value="com.erpTechnologies.tests.customer.CustomerCreatingNegativeTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustomerCreationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="erpnext-automation-framework" />
       <extension name="coverage">
@@ -149,6 +132,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CustomerCreatingNegativeTest" />
         <item itemvalue="TestNG.CustomerCreationTest" />
         <item itemvalue="TestNG.EmployeeNavigationTest.verifyEmployeeNavigation" />
         <item itemvalue="TestNG.LoginTest" />
@@ -206,6 +190,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/erpTechnologies/testdata/CustomerTestData.java</url>
           <line>5</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/erpTechnologies/utilities/DataGenerator.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/erpTechnologies/testdata/CustomerTestData.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

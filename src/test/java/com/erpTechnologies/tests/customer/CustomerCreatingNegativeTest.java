@@ -2,6 +2,7 @@ package com.erpTechnologies.tests.customer;
 
 import com.erpTechnologies.dataproviders.CustomerDataProvider;
 import com.erpTechnologies.models.Customer;
+import com.erpTechnologies.models.CustomerValidationScenario;
 import com.erpTechnologies.pages.CustomerPage;
 import com.erpTechnologies.pages.HomePage;
 import com.erpTechnologies.testdata.CustomerTestData;
@@ -10,14 +11,15 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class CustomerCreationTest extends BaseTest {
-
+public class CustomerCreatingNegativeTest extends BaseTest {
 
     @Test(
-            dataProvider = "validCustomers",
+            dataProvider = "customerValidationScenarios",
             dataProviderClass = CustomerDataProvider.class
     )
-    public void shouldCreateValidCustomer(Customer customer){
+    public void shouldShowCustomerValidation(
+            CustomerValidationScenario scenario
+    ) {
 
         HomePage homePage =
                 authenticationWorkflow.loginAsAdmin();
@@ -25,24 +27,18 @@ public class CustomerCreationTest extends BaseTest {
         CustomerPage customerPage =
                 homePage.openCustomerPage();
 
-//        Assert.assertTrue(customerPage.isCustomerPageLoaded());
-
         customerPage.clickAddCustomer();
 
         customerPage
-                .fillCustomerDetails(customer)
+                .fillCustomerDetails(scenario.getCustomer())
                 .clickSave();
 
         Assert.assertTrue(
-                customerPage.isCustomerSaved(customer.getCustomerName()),
-                "Customer was not saved successfully: "
-                        + customer.getCustomerName()
+                customerPage.isMissingFieldDisplayed(
+                        scenario.getExpectedField()
+                ),
+                scenario.getExpectedField()
+                        + " validation message was not displayed"
         );
-
-        System.out.println("Customer City: " + customer.getCity());
-        System.out.println("Customer Address: " + customer.getAddressLine1());
-        System.out.println("Customer State: " + customer.getState());
-        System.out.println("Customer Country: " + customer.getCountry());
-        System.out.println("Customer Type: " + customer.getCustomerType());
     }
 }

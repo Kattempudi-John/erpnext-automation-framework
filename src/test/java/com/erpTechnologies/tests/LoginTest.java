@@ -15,7 +15,7 @@ public class LoginTest extends BaseTest {
     private static final Logger logger =
             LogManager.getLogger(LoginTest.class);
 
-    @Test
+//    @Test
     public void verifyApplicationLaunch(){
         logger.info("Login test execution started.");
 

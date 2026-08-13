@@ -34,6 +34,24 @@ public final class CustomerTestData {
                 .build();
     }
 
+    public static Customer customerWithoutName(){
+
+        return uniqueCompanyCustomer()
+                .toBuilder()
+                .customerName("")
+                .build();
+    }
+
+    public static Customer customerWithoutEmail(){
+
+        return uniqueCompanyCustomer()
+                .toBuilder()
+                .email("")
+                .build();
+    }
+
+
+
 //    public static Customer customerWithoutEmail() {
 //
 //        return uniqueCustomer()

@@ -19,12 +19,11 @@ public class CustomerPage extends BasePage {
     private final By customerNameInput =
             By.cssSelector(ACTIVE_MODAL + " input[data-fieldname='customer_name'][data-doctype= 'Customer']");
 
-    private By customerTypeSelect(String customerType) {
-        return By.xpath(
-                ACTIVE_MODAL +
-                        " select[data-fieldname='customer_type'][data-doctype='" + customerType + "']"
-        );
-    }
+    private final By customerTypeSelect =
+            By.cssSelector(
+                    ACTIVE_MODAL +
+                            " select[data-fieldname='customer_type'][data-doctype='Customer']"
+            );
 
     private final By firstNameInput =
             By.cssSelector(ACTIVE_MODAL + " input[data-fieldname='map_to_first_name'][data-doctype='Customer']");
@@ -57,6 +56,7 @@ public class CustomerPage extends BasePage {
     private final By countryInput =
             By.cssSelector(ACTIVE_MODAL + " input[data-fieldname='country_address']");
 
+
     private By countryOption(String countryName) {
 
         return By.xpath(
@@ -76,6 +76,9 @@ public class CustomerPage extends BasePage {
     private final By editFullFormButton =
             By.cssSelector(ACTIVE_MODAL + " .modal-footer button.btn-secondary");
 
+    private final By missingValueMessage =
+            By.cssSelector("#dialog-container .msgprint");
+
     public CustomerPage(WebDriver driver) {
         super(driver);
     }
@@ -84,6 +87,13 @@ public class CustomerPage extends BasePage {
         return isDisplayed(customerPageHeader, "Customer");
     }
 
+    public boolean isMissingFieldDisplayed(String fieldName){
+
+        return isMissingFieldDisplayed(
+                missingValueMessage,
+                fieldName
+        );
+    }
     public boolean isCustomerSaved(String customerName) {
 
         String actualMessage = getText(
@@ -110,7 +120,7 @@ public class CustomerPage extends BasePage {
 
     public CustomerPage selectCustomerType(String customerType) {
         selectByVisibleText(
-                customerTypeSelect(customerType),
+                customerTypeSelect,
                 customerType,
                 "Customer Type"
         );
@@ -203,7 +213,7 @@ public class CustomerPage extends BasePage {
     public CustomerPage fillCustomerDetails(Customer customer) {
 
         enterCustomerName(customer.getCustomerName());
-//        selectCustomerType(customer.getCustomerType());
+        selectCustomerType(customer.getCustomerType());
         enterFirstName(customer.getFirstName());
         enterLastName(customer.getLastName());
         enterEmail(customer.getEmail());

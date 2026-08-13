@@ -200,17 +200,10 @@ public class BasePage {
 
             logger.info("Waiting until element '{}' becomes visible.", elementName);
 
-            wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            WebElement element =
+                    wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 
-            WebElement element = driver.findElement(locator);
-
-            logger.info("Checking whether '{}' is displayed.", elementName);
-
-            boolean displayed = element.isDisplayed();
-
-            logger.info("Element '{}' displayed status: {}", elementName, displayed);
-
-            return displayed;
+            return element.isDisplayed();
 
         } catch (Exception e) {
 
@@ -248,6 +241,32 @@ public class BasePage {
             throw new RuntimeException
                     ("Filed to Enter the Key" + elementName +
                     e);
+        }
+
+    }
+    protected boolean isMissingFieldDisplayed(By locator, String fieldName){
+
+        try{
+
+            logger.info("Retrieving text from '{}'.", fieldName);
+
+            String message = getText(
+                    locator, "Missing value Message"
+            );
+
+            return message
+                    .contains(fieldName);
+
+
+        }catch (Exception e){
+
+            logger.error("Failed to finding missing field '{}'.", fieldName, e);
+
+            ScreenshotUtil.captureScreenshot(driver, "missingField_" + fieldName);
+
+            throw new RuntimeException
+                    ("Failed to finding missing field" + fieldName +
+                            e);
         }
     }
 }
