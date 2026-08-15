@@ -1,14 +1,10 @@
 package com.erpTechnologies.listeners;
 
-import com.aventstack.extentreports.ExtentTest;
 import com.erpTechnologies.drivers.DriverManager;
-import com.erpTechnologies.reports.ExtentTestManager;
-import com.erpTechnologies.reports.ReportManager;
 import com.erpTechnologies.utilities.ScreenshotUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
@@ -17,61 +13,66 @@ public class TestListener implements ITestListener {
     private static final Logger logger =
             LogManager.getLogger(TestListener.class);
 
-    @Override
     public void onTestStart(ITestResult result){
 
-        ExtentTest extentTest =
-                ReportManager.getExtentReports()
-                        .createTest(result.getMethod().getMethodName());
+        String testName = result.getMethod().getMethodName();
 
-        logger.info("Creating ExtentTest for: {}",
-                result.getMethod().getMethodName());
-
-        ExtentTestManager.setTest(extentTest);
+        logger.info("Test execution started: {}", testName);
     }
 
     public void onTestSuccess(ITestResult result){
-        ExtentTestManager.getTest().pass("Test Passed");
+        String testName = result.getMethod().getMethodName();
 
-        logger.info("Test Passed: {}",
-                result.getMethod().getMethodName());
+        logger.info("Test execution passed: {}", testName);
     }
 
-    @Override
-    public void onFinish(ITestContext context) {
+    public void onTestFailure(ITestResult result){
 
-        ReportManager.getExtentReports().flush();
+        String testName = result.getMethod().getMethodName();
 
-        ExtentTestManager.removeTest();
+        Throwable throwable =
+                result.getThrowable();
 
-        logger.info("Extent report generated successfully.");
-    }
+        logger.info("Test execution failed: {}", testName);
 
-    @Override
-    public void onTestFailure(ITestResult result) {
+        if (throwable != null) {
 
-        logger.error("Test Failed: {}", result.getMethod().getMethodName());
+            logger.error(
+                    "Test execution failed: {}", testName, throwable
+            );
+        } else {
 
-        WebDriver driver = DriverManager.getDriver();
+            logger.error("Test execution failed: {}. No exception details available.",
+                    testName
+            );
+        }
 
-        String screenshotPath =
+        try{
+            WebDriver driver = DriverManager.getDriver();
+
+            if(driver != null){
+
                 ScreenshotUtil.captureScreenshot(
                         driver,
-                        result.getMethod().getMethodName());
+                        "Failure_" + testName
+                );
+                logger.info("Failure screenshot capture for test: {}",testName);
+            }else {
 
-        ExtentTestManager.getTest()
-                .fail(result.getThrowable());
-
-        ExtentTestManager.getTest()
-                .addScreenCaptureFromPath(screenshotPath);
+                logger.warn("Unable to capture screenshot for '{}'. WebDriver is null.", testName);
+            }
+        }catch (Exception e){
+            logger.error(
+                    "Failed to capture failure screenshot for test: {}", testName, e
+            );
+        }
     }
 
-    @Override
-    public void onTestSkipped(ITestResult result) {
+    public void onTestSkipped(ITestResult result){
 
-        logger.warn("Test Skipped: {}",
-                result.getMethod().getMethodName());
+        String testName = result.getMethod().getMethodName();
 
-        ExtentTestManager.getTest().skip(result.getThrowable());
+        logger.info("Test execution skipped: {}", testName);
     }
+
 }

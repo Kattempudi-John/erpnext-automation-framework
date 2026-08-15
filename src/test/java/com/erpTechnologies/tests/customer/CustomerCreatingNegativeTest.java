@@ -1,14 +1,11 @@
 package com.erpTechnologies.tests.customer;
 
 import com.erpTechnologies.dataproviders.CustomerDataProvider;
-import com.erpTechnologies.models.Customer;
 import com.erpTechnologies.models.CustomerValidationScenario;
 import com.erpTechnologies.pages.CustomerPage;
 import com.erpTechnologies.pages.HomePage;
-import com.erpTechnologies.testdata.CustomerTestData;
 import com.erpTechnologies.tests.BaseTest;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class CustomerCreatingNegativeTest extends BaseTest {

@@ -7,13 +7,8 @@
     <list default="true" id="dad15f0e-91c5-4cd6-a10a-f650d21105d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/AutomationReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/AutomationReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/models/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/pages/CustomerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/pages/CustomerPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/testdata/CustomerTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/testdata/CustomerTestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/listeners/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/erpTechnologies/listeners/TestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/tests/customer/CustomerCreatingNegativeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/tests/customer/CustomerCreatingNegativeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/tests/customer/CustomerCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/erpTechnologies/tests/customer/CustomerCreationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +55,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.CustomerCreatingNegativeTest">
+  <component name="RunManager" selected="TestNG.CustomerCreationTest">
     <configuration name="CustomerCreatingNegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="erpnext-automation-framework" />
       <extension name="coverage">
@@ -132,8 +127,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CustomerCreatingNegativeTest" />
         <item itemvalue="TestNG.CustomerCreationTest" />
+        <item itemvalue="TestNG.CustomerCreatingNegativeTest" />
         <item itemvalue="TestNG.EmployeeNavigationTest.verifyEmployeeNavigation" />
         <item itemvalue="TestNG.LoginTest" />
       </list>
@@ -200,6 +195,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/erpTechnologies/testdata/CustomerTestData.java</url>
           <line>22</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/testng/testng/7.11.0/testng-7.11.0.jar!/org/testng/ITestListener.class</url>
+          <line>7</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/erpTechnologies/tests/customer/CustomerCreatingNegativeTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
